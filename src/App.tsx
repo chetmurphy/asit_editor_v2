@@ -4,9 +4,11 @@ import './App.css';
 
 import AceEditor from "react-ace";
 
-import "ace-builds/src-noconflict/mode-java";
+import "ace-builds/src-noconflict/mode-yaml";
 import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/ext-language_tools";
+
+
 
 function onChange(newValue: string) {
     console.log("change", newValue);
@@ -16,10 +18,10 @@ function onChange(newValue: string) {
 function App() {
   return (
     <AceEditor
-        mode="java"
+        mode="yaml"
         theme="github"
         onChange={onChange}
-        name="UNIQUE_ID_OF_DIV"
+        name="Asit Editor"
         editorProps={{ $blockScrolling: true }}
     />
   );
